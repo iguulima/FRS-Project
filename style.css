@@ -3,7 +3,9 @@
 :root{
     --cor-header:#151515;
     --cor-fundo:#191919;
-    --cor-texto: #ffc846;
+    --cor-titulo: #ffc846;
+    --cor-texto: #fff;
+    --cor-secao: #212121;
 }
 
 body{
@@ -11,6 +13,7 @@ body{
     background-color: var(--cor-fundo);
     margin:0px;
     padding: 0;
+    
 }
 
 header{
@@ -33,8 +36,8 @@ header img{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
     font-weight: bold;
-    border-bottom: solid 1px var(--cor-texto);
-    border-top: solid 1px var(--cor-texto);
+    border-bottom: solid 1px var(--cor-titulo);
+    border-top: solid 1px var(--cor-titulo);
 
 }
 
@@ -50,7 +53,7 @@ header img{
 
 .navbar a{    
     text-decoration: none;
-    color: var(--cor-texto);
+    color: var(--cor-titulo);
 }
 
 .navbar a:hover{
@@ -59,4 +62,40 @@ header img{
 
 .banner{
     
+}
+
+
+#conteudo{
+    margin:80px;
+    
+}
+
+.texto-sobre, .texto-historia{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--cor-titulo);
+    clear:both;
+}
+
+.texto-sobre p, .texto-historia p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    color: var(--cor-texto);
+    font-weight: 400;
+}
+
+
+
+#conteudo-sobre{
+    display: flex;
+    background-color: var(--cor-secao);
+    padding: 0px 20px;
+}
+.texto-sobre{
+}
+
+.solda1 img{
+    width: 78%;
+    margin: 10px 50px;
 }
