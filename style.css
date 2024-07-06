@@ -3,7 +3,8 @@
 :root{
     --cor-header:#181818;
     --cor-fundo:#1E1E1E;
-    --cor-titulo: #ffc846;
+    --cor-amarelo: #ffc846;
+    --cor-amarelo-escuro:#d4a639;
     --cor-texto: #fff;
     --cor-secao: #212121;
     --button-text:#0E0E10;
@@ -22,13 +23,13 @@ header{
     align-content: center;
     margin:0;
     background: var(--cor-header);
-    align-items: center;
 }
 
 header img{
     width: 15vw;
     max-width: 200px;
     margin-left: 40px;
+
 }
 /* ------------------------------- NavBar -------------------------------*/
 
@@ -42,8 +43,9 @@ header img{
     float: end;
     display:flex;
     justify-content: space-around;
-    align-items: center;
     list-style-type: none;
+    align-items: center;
+    padding: 10px;
 }
 
 .navbar a{
@@ -51,21 +53,60 @@ header img{
     color:var(--cor-texto);
 }
 
-.login-button{
-    font-family: 'Poppins', sans;
-    background-color: var(--cor-titulo);
-    border:none;
-    font-weight: 800;
-    font-size: 1.2em;
+.link{
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.link:hover a{
+    color:var(--cor-amarelo)
+}
+
+.link:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor-amarelo);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.link:hover:before{
+    visibility: visible ;
+    width: 120%;
+}
+
+
+.login-button {
+    background: var(--cor-amarelo);
     width: 8vw;
     height: 3vw;
     border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 4vw;
+    margin-bottom: 2px;
+}
+
+.login-button{
+    color:var(--button-text);
+    font-weight: 650;
+    font-size: 1.1em;
 
 }
 
-.login-button a{
-    color: var(--button-text);
+.login-button:hover{
+    background: var(--cor-amarelo-escuro);
 }
+
+
+
+
 
 
 
@@ -91,7 +132,7 @@ header img{
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--cor-titulo);
+    color: var(--cor-amarelo);
     clear:both;
 }
 
@@ -180,8 +221,8 @@ header img{
 .contato hr{
     padding: 0;
     margin: 0;
-    color: var(--cor-titulo);
-    border:var(--cor-titulo) 1px solid;
+    color: var(--cor-amarelo);
+    border:var(--cor-amarelo) 1px solid;
     height: 100%;
     width: 0;
 }
@@ -195,7 +236,7 @@ header img{
 /* -------------------------------  Endereco -------------------------------*/
 
 #localizacao{
-    color: var(--cor-titulo);
+    color: var(--cor-amarelo);
     background: var(--cor-secao);
     width: 70%;
     margin: 20px auto;
