@@ -291,6 +291,67 @@ header img{
     width: 100%;
     clear: both;
 }
+.rodape-logo{
+    width: 13vw;
+    max-width: 200px;
+    margin-left: 40px;
+    margin-top: 15px;
+    float: left;
+    position: absolute;
+    
+}
+
+
+.rodape-conteudo {
+    display: flex;
+    justify-content:space-around ;
+    margin: 0 auto ;
+    width: 60vw;
+
+}
+
+.rodape-links, .rodape-contato, .rodape-social{
+    margin:0 auto;
+    list-style-type: none;
+    color:var(--cor-amarelo);
+    
+}
+
+.rodape-links h3, .rodape-contato h3, .rodape-social h3{
+    color:var(--cor-amarelo);
+    margin:0 0 20 0;
+}
+
+.rodape-links li, .rodape-contato li, .rodape-social li{
+    list-style: none;
+}
+.rodape-links a, .rodape-contato a, .rodape-social a{
+    text-decoration: none;
+    color:var(--cor-amarelo);
+    font-weight: 350;
+}
+
+.rodape-links a:hover{
+    text-decoration: underline;
+    color:var(--cor-amarelo-escuro)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -299,6 +360,6 @@ header img{
     text-align: center;
     font-weight: 500;
     margin:0px;
-    padding: 30px 0px 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 /* -------------------------------  Fim Rodape -------------------------------*/
