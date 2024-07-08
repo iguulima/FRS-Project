@@ -394,13 +394,86 @@ header img{
 
 /* -------------------------------  Login  -------------------------------*/
 
-
-.login-form{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-    
+#login-container{
+    margin: 0 auto;
     background: var(--cor-secao);
     width: 40vw;
-    height: 30vw;
+    height: 40vw;
+    margin: 3vw auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.7vw;
+}
+
+.login-form{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.form-group{
+    width: 100%;
+    height: 30%;
+}
+
+.form-group label{
+    display: block;
+    margin: 10px 10px;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#login-container h2, .form-group label{
+    color: var(--cor-amarelo);
+}
+
+.form-group input{
+    width: 97%;
+    height: 3vw;
+    background-color: var(--cor-fundo);
+    border: none;
+    border-bottom: 2px solid var(--cor-amarelo-escuro);
+    color: var(--cor-texto);
+    font-size: 1.1vw;
+    outline: none;
+    padding-left: 0.65vw;
+}
+
+.form-button{
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--cor-amarelo) ;
+    border:none;
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 700;
+    height: 3vw;
+    border-radius: 3px;
+    margin: 2vw 0;
+    padding: 2vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button:hover{
+    background-color: var(--cor-amarelo-escuro);
+    cursor: pointer;
+}
+
+.password-help{ 
+    color: var(--cor-amarelo-escuro);
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    font-size: 1vw;
+    margin-top: -3vw;
+}
+
+.password-help:hover{
+    color:var(--cor-amarelo);
+    text-decoration: underline;
 }
