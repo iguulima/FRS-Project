@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 :root{
-    --cor-header:#181818;
+    --cor-header:#121212;
     --cor-fundo:#1E1E1E;
     --cor-amarelo: #ffc846;
     --cor-amarelo-escuro:#d4a639;
     --cor-texto: #fff;
-    --cor-secao: #212121;
+    --cor-secao: #181818;
     --button-text:#0E0E10;
     --fundo-contato: #E7E8EC;
 }
@@ -30,7 +30,6 @@ header{
 
 header img{
     width: 15vw;
-    max-width: 200px;
     margin-left: 40px;
     margin-top: 15px;
 }
@@ -59,6 +58,7 @@ header img{
 .link{
     position: relative;
     padding-bottom: 6px;
+    margin: 0 2vw;
 }
 
 .link:hover a{
@@ -87,20 +87,17 @@ header img{
 .login-button {
     background: var(--cor-amarelo);
     width: 8vw;
-    height: 3vw;
+    max-width: 150px;
+    height: 3.5vw;
+    font-weight: 650;
+    font-size: 1.3vw;
     border-radius: 5px;
     align-items: center;
     display: flex;
     justify-content: center;
     margin-left: 4vw;
     margin-bottom: 2px;
-}
-
-.login-button{
     color:var(--button-text);
-    font-weight: 650;
-    font-size: 1.1em;
-
 }
 
 .login-button:hover{
@@ -216,58 +213,6 @@ header img{
 
 
 /* ------------------------------- Contato -------------------------------*/
-/* #contato{
-    padding: 0;
-    margin: 120px 0;
-    
-}
-
-#contato h2{
-    background-color: #ffc846;
-    color: #181818;
-    width: 100%;
-    height: 150px;
-    margin: 0;
-    line-height: 150px;
-    text-align: center;
-    font-size: 2.5em;
-
-
-}.contato{
-    color: #ffc846;
-    background: #20202070;
-    width: 70%;
-    height: 250px;
-    margin: 30px auto;
-    padding: 40px 0px;
-    display: flex;
-    justify-content:space-around;
-    border-radius: 20px;    
-}
-
-.contato i{
-    font-size: 1.5em;
-}
-
-
-.contato p{
-    font-weight: 500;
-}
-
-
-.contato h4{
-    color: #fff;
-    font-weight: 400;
-}
-
-.contato hr{
-    padding: 0;
-    margin: 0;
-    color: var(--cor-amarelo);
-    border:var(--cor-amarelo) 1px solid;
-    height: 100%;
-    width: 0;
-} */
 
 #contato-section{
     margin:0;
@@ -321,45 +266,11 @@ header img{
 
 /* -------------------------------- Mapa  -------------------------------*/
 
-/* #localizacao{
-    color: var(--cor-amarelo);
-    background: var(--cor-secao);
-    width: 70%;
-    margin: 20px auto;
-    padding: 20px 0px;
-    border-radius: 20px;   
-}
-
-#localizacao i{
-    font-size: 1.5em;
-    
-}
-
-.endereco, .tituloendereco{
-    padding: 10px 40px;
-    width: 75%;
-    margin: 0px auto;
-}
-
-.endereco p{
-    color: white;
-    margin: 5px;
-    font-size: 15px;
-}
-
-.mapa{
-    text-align: center;
-}
-
-.mapa iframe{
-    width: 100%;
-    height: 350px;
-} */
-
 .secao-mapa{
     display: flex;
-    width: 70vw;
-    height: 25vw;
+    width: 80vw;
+    height: 30vw;
+    max-height: 400px;
     margin: 0 auto;
     justify-content: space-between;
     margin:30px auto;
@@ -469,23 +380,6 @@ header img{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .rodape h5{
     color:#ffc846;
     text-align: center;
@@ -494,3 +388,19 @@ header img{
     padding: 10px 0px 20px 0px;
 }
 /* -------------------------------  Fim Rodape -------------------------------*/
+
+
+
+
+/* -------------------------------  Login  -------------------------------*/
+
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    
+    background: var(--cor-secao);
+    width: 40vw;
+    height: 30vw;
+}
