@@ -8,6 +8,7 @@
     --cor-texto: #fff;
     --cor-secao: #212121;
     --button-text:#0E0E10;
+    --fundo-contato: #E7E8EC;
 }
 
 body{
@@ -174,7 +175,7 @@ header img{
 
 
 /* ------------------------------- Contato -------------------------------*/
-#contato{
+/* #contato{
     padding: 0;
     margin: 120px 0;
     
@@ -225,17 +226,61 @@ header img{
     border:var(--cor-amarelo) 1px solid;
     height: 100%;
     width: 0;
+} */
+
+#contato-section{
+    margin:0;
+    padding: 0;
+
 }
+
+.contato-header{
+    background-color: #ffc846;
+    color: #181818;
+    width: 100%;    
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1vw;
+    margin-top:0;
+}
+
+.contato{
+    width: 60vw;
+    margin:0 auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+    padding-left: 30px;
+    color:var(--cor-texto)
+}
+
+
+.contato hr{
+    border: 1px solid var(--cor-amarelo-escuro);
+    padding: 0;
+    margin-left:0;
+
+}
+
+.email, .fone{
+    width:45%;
+
+}
+
+.contato h1{
+    color:var(--cor-amarelo);
+}
+
 
 /* -------------------------------  Fim Contato -------------------------------*/
 
 
+/* -------------------------------- Mapa  -------------------------------*/
 
-
-
-/* -------------------------------  Endereco -------------------------------*/
-
-#localizacao{
+/* #localizacao{
     color: var(--cor-amarelo);
     background: var(--cor-secao);
     width: 70%;
@@ -268,7 +313,44 @@ header img{
 .mapa iframe{
     width: 100%;
     height: 350px;
+} */
+
+.secao-mapa{
+    display: flex;
+    width: 70vw;
+    height: 25vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin:30px auto;
+    background-color: #181818;
 }
+
+.mapa-texto{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+
+}
+
+.mapa-texto h1{
+    color: var(--cor-amarelo);
+}
+
+.mapa-p{
+    color: var(--cor-texto);
+    font-size: 0.9em;
+    
+}
+
+.secao-mapa iframe{
+    width: 55%;
+}
+
+
+
+
 
 /* -------------------------------  Fim Endereco -------------------------------*/
 
@@ -302,12 +384,20 @@ header img{
 }
 
 
+
 .rodape-conteudo {
     display: flex;
     justify-content:space-around ;
     margin: 0 auto ;
     width: 60vw;
 
+}
+.rodape-links, .rodape-social, .rodape-contato{
+    width:40%;
+}
+.rodape-conteudo li{
+    font-size: 0.8em;
+    padding: 5px 0;
 }
 
 .rodape-links, .rodape-contato, .rodape-social{
