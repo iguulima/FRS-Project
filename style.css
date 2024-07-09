@@ -50,15 +50,20 @@ header img{
     padding: 10px;
 }
 
-.navbar a{
+.navbar{
     text-decoration: none;
-    color:var(--cor-texto);
 }
 
 .link{
     position: relative;
     padding-bottom: 6px;
     margin: 0 2vw;
+    color:var(--cor-texto);
+}
+
+.link a{
+    text-decoration: none;
+    color:var(--cor-texto);
 }
 
 .link:hover a{
@@ -97,9 +102,12 @@ header img{
     justify-content: center;
     margin-left: 4vw;
     margin-bottom: 2px;
-    color:var(--button-text);
 }
 
+.login-button a{
+    text-decoration: none;
+    color:var(--button-text);
+}
 .login-button:hover{
     background: var(--cor-amarelo-escuro);
 }
