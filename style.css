@@ -11,6 +11,7 @@
     --cor-secao: #181818;
     --button-text:#0E0E10;
     --fundo-contato: #E7E8EC;
+
 }
 
 body{
@@ -22,16 +23,16 @@ body{
 }
 
 header{
-    height: 8vw;
+    height: 6vw;
     align-content: center;
     margin:0;
     background: var(--cor-header);
 }
 
 header img{
-    width: 15vw;
+    width: 14vw;
     margin-left: 40px;
-    margin-top: 15px;
+    margin-top: 22px;
 }
 /* ------------------------------- NavBar -------------------------------*/
 
@@ -54,23 +55,24 @@ header img{
     text-decoration: none;
 }
 
-.link{
+.nav-link{
     position: relative;
     padding-bottom: 6px;
-    margin: 0 2vw;
+    margin: 0.1vw;
     color:var(--cor-texto);
+    font-size: 0.9em;
 }
 
-.link a{
+.nav-link a{
     text-decoration: none;
     color:var(--cor-texto);
 }
 
-.link:hover a{
+.nav-link:hover a{
     color:var(--cor-amarelo)
 }
 
-.link:before{
+.nav-link:before{
     content: '';
     position: absolute;
     width: 0;
@@ -83,7 +85,7 @@ header img{
     transition: all 0.3s ease-in-out 0s;
 }
 
-.link:hover:before{
+.nav-link:hover:before{
     visibility: visible ;
     width: 120%;
 }
@@ -95,16 +97,16 @@ header img{
     max-width: 150px;
     height: 3.5vw;
     font-weight: 650;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     border-radius: 5px;
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-left: 4vw;
     margin-bottom: 2px;
 }
 
-.login-button a{
+.login-button{
     text-decoration: none;
     color:var(--button-text);
 }
@@ -127,52 +129,19 @@ header img{
 }
 
 .banner img{
-    width:100%;
-    height: 100%;
+    width:100vw;
+    height: 80dvh;
+    filter: blur(5px) ;
 }
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transition: opacity 0.3s ease;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-}
-
-.banner:hover .overlay {
-    opacity: 0; 
-}
-
-.text {
-    font-family: 'Merriweather', serif;
-    color: var(--cor-amarelo);
-    font-size: 7vw;
-    text-align: center;
-    transition: opacity 0.3s ease;
-}
-
-.banner:hover .text {
-    opacity: 0;
-}
 
 
 
 /* ------------------------------- Main -------------------------------*/
 
 
-.banner{
-    
-}
-
-
 #conteudo{
-    
+  width: 100%;  
 }
 
 .texto-sobre, .texto-historia{
@@ -192,7 +161,7 @@ header img{
 
 
 
-#conteudo-sobre{
+#sobre{
     display: flex;
     background-color: var(--cor-secao);
     padding: 0px 20px;
@@ -306,6 +275,7 @@ header img{
 
 .secao-mapa iframe{
     width: 55%;
+    border-radius: 0.5vw;
 }
 
 
@@ -401,6 +371,10 @@ header img{
 
 
 /* -------------------------------  Login  -------------------------------*/
+
+#login-page{
+    
+}
 
 #login-container{
     margin: 0 auto;
