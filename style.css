@@ -57,6 +57,10 @@ header img{
     text-decoration: none;
 }
 
+.navbar-menu{
+    display: none;
+}
+
 .nav-link{
     position: relative;
     padding-bottom: 6px;
@@ -513,16 +517,27 @@ header img{
         height: 15dvh;
         display: flex;
         align-items: center;
+        justify-content: space-around;
         
     }
 
     .header img{
-        width: 20vw;
+        margin: 0;
+        width: 23vw;
     }
 
-
     .navbar{
+        margin: 0;
+    }
+
+    .navbar ul{
         display: none;
+    }
+
+    .navbar-menu{
+        display: inline;
+        width: 7vw;
+        float: inline-end;
     }
 
     #sobre, #conteudo-historia{
@@ -570,7 +585,27 @@ header img{
     }
 
     .rodape{
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .rodape-logo{
+        position: static;
+        margin: 5vh auto;
+        width: 15vw;
+    }
+
+    .rodape-links, .rodape-contato{
+        display: none;
+    }
+
+    .rodape-social ul{
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
 
 }
