@@ -12,7 +12,7 @@
     --cor-secao: #181818;
     --button-text:#0E0E10;
     --fundo-contato: #E7E8EC;
-    --loginform-brackground: #181818b3;
+    --loginform-background: #181818b3;
     --login-input: rgba(255, 255, 255, 0.05);
 }
 
@@ -132,8 +132,8 @@ header img{
 
 .banner img{
     width:100vw;
-    height: 80dvh;
-    filter: blur(5px) ;
+    height: 70dvh;
+    filter: blur(2px) ;
 }
 
 
@@ -207,7 +207,7 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.1vw;
+    font-size: 1.6rem;
     margin-top:0;
 }
 
@@ -249,7 +249,6 @@ header img{
     display: flex;
     width: 80vw;
     height: 30vw;
-    max-height: 400px;
     margin: 0 auto;
     justify-content: space-between;
     margin:30px auto;
@@ -388,7 +387,7 @@ header img{
 .form-container{
     width: 35%;
     height: 100%;
-    background-color: var(--loginform-brackground);
+    background-color: var(--loginform-background);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -499,3 +498,79 @@ header img{
     padding: 0;
 }
 
+
+/* -------------------------------  Fim Login  -------------------------------*/
+
+
+
+/* ------------------------------- Celular -------------------------------- */
+@media (max-width: 500px){
+    body{
+        font-size: 0.8rem;
+    }
+
+    .header{
+        height: 15dvh;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .header img{
+        width: 20vw;
+    }
+
+
+    .navbar{
+        display: none;
+    }
+
+    #sobre, #conteudo-historia{
+        text-align: center;
+        padding: 5vh 0;
+    }
+
+    #conteudo hr{
+        margin-bottom: 4dvh;
+        margin: -10px 15vw 7vw 15vw;
+    }
+
+
+    .contato-header{
+        height: 15vh ;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .contato{
+        display: grid;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .contato hr{
+        width: 90%;
+        margin: 7dvh 0;
+    }
+
+    .email, .fone{
+        width: 80%;
+        padding: 2vh 10vw;
+    }
+
+    .secao-mapa{
+        display: grid;
+        height: 90vh;
+        width: 100%;
+    }
+
+    .secao-mapa iframe{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .rodape{
+        
+    }
+
+}
