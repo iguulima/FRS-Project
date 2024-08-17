@@ -14,6 +14,7 @@
     --fundo-contato: #E7E8EC;
     --loginform-background: #181818b3;
     --login-input: rgba(255, 255, 255, 0.05);
+    --account-section-background: #272727;
 }
 
 body{
@@ -26,6 +27,7 @@ body{
 
 header{
     height: 6vw;
+    
     align-content: center;
     margin:0;
     background: var(--cor-header);
@@ -608,4 +610,40 @@ header img{
     }
 
 
+}
+
+
+/* --------------------- Seção Perfil ------------------------- */
+
+.account-section{
+    width: 70vw;
+    height: 40vh;
+    margin: 15dvh auto;
+    background-color: var(--account-section-background);
+    color:var(--cor-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-section div{
+    margin: 0 3vw;
+}
+
+.account-img{
+    width:15vw;
+    height: 15vw;
+    border-radius: 15vw;
+    background: rgb(105, 105, 105);
+}
+
+.account-info{
+    width: 60%;
+}
+
+.account-info span{
+    font-weight: normal;
+    font-size: 1rem;
+    margin-left: 1vw;
+    color:var(--cor-amarelo);
 }
