@@ -3,44 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Bem Vindo - F.R.S. Montagens</title>
+        <link rel="icon" href="images/logo3-semfundo.png" type="image/png">
+        <link rel="stylesheet" href="account.css">
     </head>
     <body>
         <header class="header">
             <img src="/images/logo-semfundo.png" alt="Logo da FRS Montagens">
             <nav class="navbar">
                 <ul>
-                    <li class="nav-link"><a href="index.html">Inicio</a></li>
-                    <li class="nav-link"><a href="#">Sobre</a></li>
-                    <li class="nav-link"><a href="#">Objetivos</a></li>
-                    <li class="nav-link"><a href="#">Contato</a></li>
-                    <a  href="login.html" class="login-button">
-                        <li>
-                            Entrar <i class="fa-solid fa-user" style="color: #181818; margin-left: 5px;"></i>
-                        </li>
-                    </a>
-                </ul>\
-                <svg class="navbar-menu" viewBox="0 0 39 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.36264 4.95918H36.7912C37.5438 4.95918 38.1538 4.46581 38.1538 3.85714V1.10204C38.1538 0.49337 37.5438 0 36.7912 0H1.36264C0.610036 0 0 0.49337 0 1.10204V3.85714C0 4.46581 0.610036 4.95918 1.36264 4.95918ZM1.36264 15.9796H36.7912C37.5438 15.9796 38.1538 15.4862 38.1538 14.8776V12.1224C38.1538 11.5138 37.5438 11.0204 36.7912 11.0204H1.36264C0.610036 11.0204 0 11.5138 0 12.1224V14.8776C0 15.4862 0.610036 15.9796 1.36264 15.9796ZM1.36264 27H36.7912C37.5438 27 38.1538 26.5066 38.1538 25.898V23.1429C38.1538 22.5342 37.5438 22.0408 36.7912 22.0408H1.36264C0.610036 22.0408 0 22.5342 0 23.1429V25.898C0 26.5066 0.610036 27 1.36264 27Z" fill="white"/>
-                </svg>
+                    <li class="nav-link"><a href="index.html">Página Inicial</a></li>
+                    <li class="nav-link"><a href="#">Acessar Perfil</a></li>
+                    <li class="nav-link"><a href="#">Cadastros</a></li>
             </nav>
         </header>
 
+        <aside class="lateral-navbar">
+
+        </aside>
+
+        <h1 class="welcome-msg">Bem Vindo, USUARIO</h1>
 
         <main>
-            <div class="account-section">
-                <div class="account-img">
-
+            <div class="reports">
+                <div class="concluido">
+                    <h2>Concluidos</h2>
+                    <h1>69</h1>
                 </div>
-                <div class="account-info">
-                    <h3>Nome: <span>Bruno Safado</span> </h3>
-                    <h3>Email: <span>bruinreidafoda@gmail.com</span></h3>
-                    <h3>Telefone: <span>(17) 99899-9988</span></h3>
-                    <h3>CPF: <span>323.543.234-42</span></h3>
+                <hr>
+                <div class="andamento">
+                    <h2>Em Andamento</h2>
+                    <h1>13</h1>
+                </div>
+                <hr>
+                <div class="atraso">
+                    <h2>Atrasados</h2>
+                    <h1>256</h1>
                 </div>
             </div>
+
+            <div class="search-section">
+                <h3>Deseja realizar a consulta de um pedido?</h3>
+                <p>Informe o código do pedido ou o CNPJ da empresa em que ele esta vinculado: </p>
+                <div class="search-bar"><input type="text" placeholder=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="2vw"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffcd56" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></div>
+            </div>
         </main>
+
+
+        
 
     </body>
 </html>

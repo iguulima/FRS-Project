@@ -31,6 +31,7 @@ header{
     align-content: center;
     margin:0;
     background: var(--cor-header);
+    border-bottom: solid 2px var(--cor-amarelo);
 }
 
 header img{
@@ -437,21 +438,34 @@ header img{
     margin: 0.7vw 1vw 0.7vw 0.7vw;
 }
 
+
 .login-button2{
-    background: #FFC846;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
+    background-color: var(--cor-amarelo);
     width: 40%;
     height: 6vh;
-    font: normal 700 1.3vw 'Poppins', sans;
-    color: #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
     margin: 4vh 0 3vh 0;
-    cursor: pointer;
+
 }
 
-.login-button2:hover{
+.login-button2 input{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    background: #FFC846;
+    border: none;
+    font: normal 700 1.3vw 'Poppins', sans;
+    color: #000000;
+    width: 100%;
+}
+
+.login-button2 input:hover{
     background-color: var(--cor-amarelo-escuro);
 }
+
 
 
 .login-questions{
