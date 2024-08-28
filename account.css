@@ -30,7 +30,8 @@
     justify-content: space-around;
     text-align: center;
     margin: 0 auto;
-    width: 70%;
+    width: 75%;
+    height: 30vh;
     padding: 3vh 0;
     background-color: var(--account-section-background);
 }
@@ -43,9 +44,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.reports h2{
+    font-size: 1.3rem;
+}
+
 .reports hr{
     border: 1px solid var(--cor-amarelo);
-    margin: 3vh 0;
+    margin: 2vh 0;
+}
+
+.concluido, .andamento, .atraso{
+    width: 25%;
 }
 
 .concluido{
@@ -60,12 +69,15 @@
     color: var(--cor-atraso);
 }
 
+
+
 .search-section{
     background-color: var(--account-section-background);
-    width: 50%;
-    padding: 2vw;
-    margin: 0 auto;
-    font-size: 0.8rem;
+    width: 70%;
+    max-width: 800px;
+    padding: 1vw 3vw;
+    margin: 9vh auto;
+    font-size: 0.9rem;
 }
 
 .search-section h3{
@@ -79,15 +91,64 @@
 .search-bar{
     background-color: #171717;
     width: 95%;
-    
-}
-
-.search-bar svg{
-    float: end;
+    margin: 3vw 0 1vw 0;
+    padding: 0.7vh;
+    border-bottom: solid 2px var(--cor-amarelo);
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
 }
 
 .search-bar input{
     background-color: transparent;
     border: none;
+    width: 95%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5vw 0.7vw 0.5vw 1vw;
+    color:var(--cor-texto);
+    outline: none;
 }
 
+.search-bar svg{
+    padding: 0 0.7vw;
+}
+
+
+/* -------------------------- Seção Cadastros ---------------------- */
+
+.secao-cadastros{
+    width:80vw;
+    margin: 15vh auto;
+}
+
+.secao-cadastros h2{
+    color:var(--cor-amarelo);
+    margin: 5vh;
+}
+
+.cadastro-form{
+    color:var(--cor-texto);
+    background-color: #212121;    
+    padding: 1vw 2.5vw;
+    margin:2vh;
+    border-radius: 1vw;
+}
+
+.cadastro-btn{
+    background: var(--cor-amarelo);
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 5vh 0 ;
+}
+
+.cadastro-form a{
+    text-decoration: none;
+    color: var(--button-text);
+}
