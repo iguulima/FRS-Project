@@ -136,10 +136,12 @@ header img{
 .banner {
     position: relative;
     overflow: hidden;
+    border-bottom: solid 2px var(--cor-amarelo);
+
 }
 
 .banner img{
-    width: 80vw;
+    width: 100vw;
     height: 70dvh;
 }
 
@@ -159,6 +161,7 @@ header img{
     font-weight: bold;
     color: var(--cor-amarelo);
     clear:both;
+    padding: 7vh;
 }
 
 .texto-sobre p, .texto-historia p{
@@ -193,6 +196,7 @@ header img{
 }
 
 
+
 /* ------------------------------- Fim Main -------------------------------*/
 
 
@@ -203,7 +207,6 @@ header img{
 #contato-section{
     margin:0;
     padding: 0;
-
 }
 
 .contato-header{
@@ -223,10 +226,12 @@ header img{
     margin:0 auto;
     padding: 20px 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #181818;
     padding-left: 30px;
-    color:var(--cor-texto)
+    color:var(--cor-texto);
+    border-bottom: solid 2px var(--cor-amarelo);
+
 }
 
 
@@ -238,8 +243,8 @@ header img{
 }
 
 .email, .fone{
-    width:45%;
-
+    width:40%;
+    padding: 0 3vw;
 }
 
 .contato h1{
@@ -260,6 +265,7 @@ header img{
     justify-content: space-between;
     margin:30px auto;
     background-color: #181818;
+    border-bottom: solid 2px var(--cor-amarelo);
 }
 
 .mapa-texto{
@@ -290,7 +296,7 @@ header img{
 
 
 
-/* -------------------------------  Fim Endereco -------------------------------*/
+/* -------------------------------  Fim Mapa -------------------------------*/
 
 
 
@@ -312,13 +318,13 @@ header img{
     clear: both;
 }
 .rodape-logo{
-    width: 13vw;
-    max-width: 200px;
-    margin-left: 40px;
-    margin-top: 15px;
-    float: left;
-    position: absolute;
-    
+    width: 10vw;
+    margin: 3vh auto;
+
+}
+
+.rodape-logo img{
+    width: 10vw;
 }
 
 
@@ -345,15 +351,15 @@ header img{
     
 }
 
-.rodape-links h3, .rodape-contato h3, .rodape-social h3{
+.rodape h3{
     color:var(--cor-amarelo);
     margin:0 0 20 0;
 }
 
-.rodape-links li, .rodape-contato li, .rodape-social li{
+.rodape li{
     list-style: none;
 }
-.rodape-links a, .rodape-contato a, .rodape-social a{
+.rodape a{
     text-decoration: none;
     color:var(--cor-amarelo);
     font-weight: 350;

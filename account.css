@@ -11,6 +11,7 @@
     --loginform-background: #181818b3;
     --login-input: rgba(255, 255, 255, 0.05);
     --account-section-background: #272727;
+    --navbar-background: #1F1F1F;
 
     --cor-concluido: #5EFF56;
     --cor-andamento: #FFCD56;
@@ -25,15 +26,27 @@
     margin: 10vh 0;
 }
 
+
+.reports-box{
+    margin: 0 auto;
+    width: 75%;
+    height: 40vh;
+    padding: 2vh 0;
+    background-color: var(--account-section-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.reports-box > h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+}
+
 .reports{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin: 0 auto;
-    width: 75%;
-    height: 30vh;
-    padding: 3vh 0;
-    background-color: var(--account-section-background);
 }
 
 .reports h1{
@@ -50,7 +63,6 @@
 
 .reports hr{
     border: 1px solid var(--cor-amarelo);
-    margin: 2vh 0;
 }
 
 .concluido, .andamento, .atraso{
@@ -152,3 +164,28 @@
     text-decoration: none;
     color: var(--button-text);
 }
+
+/* -------------------------- Fim Cadastros ---------------------- */
+
+/* -------------------------- Navbar Lateral ---------------------- */
+
+.lateral-navbar{
+    position: absolute;
+    left: 0;
+    width: 5vw;
+    height: 70vh;
+    background: var(--navbar-background);
+    border-right: 2px solid #FFCD56;
+    border-bottom: 2px solid #FFCD56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/* -------------------------- Fim Navbar Lateral ---------------------- */
